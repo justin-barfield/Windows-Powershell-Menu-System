@@ -1,0 +1,185 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200309123938
+Username: 
+RunAs User: 
+Configuration Name: 
+Machine: 
+Host Application: powershell.exe -WindowStyle maximized -NoExit -File \\FILEPATH\menu.ps1
+Process ID: 3660
+PSVersion: 5.1.18362.628
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.628
+BuildVersion: 10.0.18362.628
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is \\FILEPATH\logs\menu\COMPUTERNAME-03-09-20-12_39_38.txt
+PS>TerminatingError(Set-ExecutionPolicy): "Windows PowerShell updated your execution policy successfully, but the setting is overridden by a policy defined at a more specific scope.  Due to the override, your shell will retain its current effective execution policy of RemoteSigned. Type "Get-ExecutionPolicy -List" to view your execution policy settings. For more information please see "Get-Help Set-ExecutionPolicy"."
+Set-ExecutionPolicy : Windows PowerShell updated your execution policy successfully, but the setting is overridden by a 
+policy defined at a more specific scope.  Due to the override, your shell will retain its current effective execution 
+policy of RemoteSigned. Type "Get-ExecutionPolicy -List" to view your execution policy settings. For more information 
+please see "Get-Help Set-ExecutionPolicy".
+At \\FILEPATH\menu.ps1:14 char:1
++ Set-ExecutionPolicy Unrestricted
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+Set-ExecutionPolicy : Windows PowerShell updated your execution policy successfully, but the setting is overridden by a policy
+defined at a more specific scope.  Due to the override, your shell will retain its current effective execution policy of
+RemoteSigned. Type "Get-ExecutionPolicy -List" to view your execution policy settings. For more information please see "Get-Help
+Set-ExecutionPolicy".
+At \\FILEPATH\menu.ps1:14 char:1
++ Set-ExecutionPolicy Unrestricted
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (:) [Set-ExecutionPolicy], SecurityException
+    + FullyQualifiedErrorId : ExecutionPolicyOverride,Microsoft.PowerShell.Commands.SetExecutionPolicyCommand
+ ---------------------------------------
+¦	ATL SSB Script Runner v0.1	¦
+ ---------------------------------------
+Running as: username
+		+ Main Menu
+			1. New User Config
+			2. Loaner Setup
+			3. Individual Actions
+			0. Quit And Exit
+ ---------------------------------------
+¦	ATL SSB Script Runner v0.1	¦
+ ---------------------------------------
+		+ Loaner Setup
+			1.  Initiate Standard Loaner
+			2.  Initiate Presentation Loaner
+			0. Quit And Return To Main Menu
+Transcript started, output file is \\FILEPATH\logs\loaner\COMPUTERNAME-03-09-20-12_39_43.txt
+
+		Starting loaner initiation
+
+		Start Init delete old init folders
+
+		Start Init local folder
+
+
+    Directory: C:\ProgramData
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         3/9/2020  12:39 PM                LBF
+
+		Start Init Copy
+
+Start Loaner Background Copy
+
+Copying image locally
+
+Image copy complete
+
+Start ChangeLog copy
+
+Copying ChangeLog locally
+
+ChangeLog copy complete
+
+Start GPO copy
+
+Copying GPO locally
+
+GPO copy complete
+
+Start GPO script copy
+
+
+    Directory: C:\Windows\System32\GroupPolicy\User\Scripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         3/6/2020   2:39 PM                CommonScripts
+
+Removing existing files
+
+Copying scripts locally
+Finish copy
+
+Start Uninstaller copy
+
+Copying Uninstaller locally
+
+ChangeLog copy complete
+
+		Start Init Uninstall
+
+Start Uninstall Process
+
+Uninstalls complete
+
+		Start Init Installs
+
+Closing MS Office apps
+
+Start Uninstall Process
+
+Uninstalling MsiExec.exe /I{2F8C8711-BFD1-4F51-94C6-C3AFA62BA901}
+
+
+Uninstalling MsiExec.exe /I{84E8F183-5580-4989-B47E-E2C5A06E324D}
+
+
+Uninstalls complete
+
+Start WebEx Meetings install
+
+Start WebEx Productivity Tools install
+
+Installs complete
+
+Start MS Office 64-bit install
+
+Copy Items
+
+Start Uninstall
+
+
+Start Install
+Cleaning up
+
+Install complete
+
+	Start Firefox install
+
+Copy to local
+
+Start install
+
+Install complete
+
+Cleaning up
+
+Complete
+
+	Start OneDrive install
+
+Copy to local
+
+Start install
+
+Install complete
+
+Cleaning up
+
+Complete
+
+		Start Init hide local folder
+
+
+		Start Init local init date-time file
+Transcript stopped, output file is \\FILEPATH\logs\loaner\COMPUTERNAME-03-09-20-12_39_43.txt
+ ---------------------------------------
+¦	ATL SSB Script Runner v0.1	¦
+ ---------------------------------------
+		+ Loaner Setup
+			1.  Initiate Standard Loaner
+			2.  Initiate Presentation Loaner
+			0. Quit And Return To Main Menu

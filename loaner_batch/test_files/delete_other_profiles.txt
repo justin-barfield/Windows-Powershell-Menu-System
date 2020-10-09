@@ -1,0 +1,1 @@
+for /D %%i in ("C:\Users\* ^| findstr ) do if not "%%~i"=="Administrator" if not "%%i"=="CSEP_*" if not "%%i"=="Default" if not "%%i"=="Public" if not "%%i"=="%USERNAME%" del /S /Q "%%~i"

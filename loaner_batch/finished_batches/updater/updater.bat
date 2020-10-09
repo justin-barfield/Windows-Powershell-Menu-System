@@ -1,0 +1,1 @@
+powershell -Command "Set-ExecutionPolicy Unrestricted; C:\ProgramData\LoanerBatchFile\updater.ps1"

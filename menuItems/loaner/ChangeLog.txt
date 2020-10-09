@@ -1,0 +1,14 @@
+CHANGELOG
+
+Updates to the CHANGELOG will cause loaners to pull updates. Be sure that changes made are well documented and do not cause issues. This is a LIVE deployment.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+2-14-20 - username
+    GPO "fix" removed from the GPO scripts. Further investigation needed on what is causing the GPO settings to revert.
+
+2-21-20 - username
+    GPO change to scripts. Scripts have been moved to Powershell and lines added to set to force exception policy for process.
+        Checkin script created and added to logon and logoff. CommonScripts folder created within the user folder in GPO.
+        Updater script has been adjusted to work properly... Functions are now being called correctly, updater text doc
+        is being checked properly. Update to time format in checkin to use colons instead of underscore.

@@ -1,0 +1,1 @@
+forfiles /p C:\temp /M *.csv /C "cmd /c echo @file @fdate @ftime"

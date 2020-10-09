@@ -1,0 +1,3 @@
+wmic product where "description like '%Teams%' " uninstall
+
+pause

@@ -34,7 +34,7 @@ function installSnagIt(){
     Start-Process -FilePath powershell.exe -ArgumentList "-File $menuItems\snagit\transfer.ps1" -Wait
 }
 function installTeraData(){   
-    Start-Process -FilePath powershell.exe -ArgumentList "-File $menuItems\TeraData\transfer.ps1" -Wait
+    Start-Process -FilePath powershell.exe -ArgumentList "-File $menuItems\TeraData\transfer_teradata_installer.ps1" -Wait
 }
 
 function installWebEx() {
@@ -368,7 +368,6 @@ function loanerGpo() {
     Write-Host "`n`t`tStart Init Copy"
 
     Get-ChildItem -Path "C:\Windows\System32\GroupPolicy\Machine" -Include @("*.ps1", "*.bat", "*.ini") -File -Recurse | ForEach-Object { Remove-Item $_}
-
     Get-ChildItem -Path "C:\Windows\System32\GroupPolicy\User" -Include @("*.ps1", "*.bat", "*.ini") -File -Recurse | ForEach-Object { Remove-Item $_}
 
     . "$loanerItems\copy\background.ps1" -Wait
